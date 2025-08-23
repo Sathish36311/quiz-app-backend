@@ -141,4 +141,8 @@ python manage.py runserver
 ```
 ---
 
+## I faced a few challenges while building a quiz application using Django:
+- Difficulty in parsing and handling AI responses effectively
+- Limited understanding of how different components communicate with each other
+- Lack of clarity on the standard practices to follow for folder structure and file organization
 
