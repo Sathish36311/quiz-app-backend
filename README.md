@@ -14,7 +14,44 @@ It provides APIs for user authentication, quiz generation, quiz attempts, and hi
 ---
 
 ## 📂 Project Structure
+```
+  backend/
+│── quizproject/            # Django project root
+│   │── __init__.py
+│   │── settings.py
+│   │── urls.py             # Root URL configuration
+│   │── wsgi.py
+│   │── asgi.py
+│
+│── authapp/                # Handles authentication
+│   │── migrations/
+│   │── __init__.py
+│   │── models.py
+│   │── views.py
+│   │── urls.py
+│   │── serializers.py
+│   │── tests.py
+│   │── admin.py
+│   │── apps.py
+│
+│── quizapp/                # Core quiz logic
+│   │── migrations/
+│   │── __init__.py
+│   │── models.py           # Quiz & Question models
+│   │── serializers.py      # API serializers
+│   │── views.py            # Quiz endpoints
+│   │── urls.py             # Quiz URLs
+│   │── ai.py               # AI integration for quiz generation
+│   │── tests.py
+│   │── admin.py
+│   │── apps.py
+│
+│── manage.py               # Django management script
+│── requirements.txt        # Dependencies
+│── .gitignore
+│── venv/                   # Virtual environment
 
+```
 
 
 ---
