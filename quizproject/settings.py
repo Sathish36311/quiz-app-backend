@@ -30,6 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "quiz-app-op5q.onrender.com",
+    "quiz-app-frontend-9219jouz9-sathishs-projects-5cc891fc.vercel.app"
 ]
 
 # Application definition
@@ -61,7 +63,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://quiz-app-frontend-9219jouz9-sathishs-projects-5cc891fc.vercel.app/"
+    "https://quiz-app-frontend-9219jouz9-sathishs-projects-5cc891fc.vercel.app"
 ]
 CORS_ALLOW_ALL_ORIGINS = True
 
