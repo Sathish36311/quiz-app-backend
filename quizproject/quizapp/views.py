@@ -21,7 +21,7 @@ class QuizCreateView(generics.CreateAPIView):
 
 
 class QuizRetrieveView(generics.RetrieveAPIView):
-    querySet = Quiz.objects.all()
+    queryset = Quiz.objects.all()
     serializer_class = QuizSerializer
     permission_classes = [IsAuthenticated]
     lookup_field = 'id'
@@ -40,6 +40,7 @@ class QuizHistoryView(generics.ListAPIView):
 
 class UpdateScoreView(generics.UpdateAPIView):
     queryset = Quiz.objects.all()
+    print(queryset)
     serializer_class = QuizSerializer
     permission_classes = [IsAuthenticated]
     lookup_field = 'id'
