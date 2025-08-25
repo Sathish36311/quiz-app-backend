@@ -30,10 +30,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "0fce3fb08874.ngrok-free.app",  
 ]
-
-
 
 # Application definition
 
@@ -62,11 +59,11 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:3000",
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://quiz-app-frontend-9219jouz9-sathishs-projects-5cc891fc.vercel.app/"
+]
 CORS_ALLOW_ALL_ORIGINS = True
-
 
 
 ROOT_URLCONF = 'quizproject.urls'
