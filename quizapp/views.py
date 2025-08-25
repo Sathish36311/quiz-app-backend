@@ -40,7 +40,6 @@ class QuizHistoryView(generics.ListAPIView):
 
 class UpdateScoreView(generics.UpdateAPIView):
     queryset = Quiz.objects.all()
-    print(queryset)
     serializer_class = QuizSerializer
     permission_classes = [IsAuthenticated]
     lookup_field = 'id'
