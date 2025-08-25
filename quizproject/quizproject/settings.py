@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-rrxu@ju##8&)(na&3c)c8%@=146oytpw33a#+l_2f-1g$51s(=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "d61cb66a7f3c.ngrok-free.app"
+]
 
 
 # Application definition
@@ -57,6 +61,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://d61cb66a7f3c.ngrok-free.app",
 ]
 
 
@@ -88,7 +93,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'quiz_db',         # Change this to your database name
         'USER': 'postgres',              # Change this to your Postgres user
-        'PASSWORD': 'PassWord@123',      # Change this to your Postgres password
+        'PASSWORD': 'Password@123',      # Change this to your Postgres password
         'HOST': 'localhost',
         'PORT': '5432',
     }
